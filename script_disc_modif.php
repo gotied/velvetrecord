@@ -78,8 +78,11 @@ try {
     
     $requete->execute();
     $requete->closeCursor();
-    
 
+
+
+
+    
     // Deuxième requête UPDATE avec une condition :
     if ($jaquette !== Null) {
         $requete2 = $db->prepare("UPDATE disc SET disc_picture = :picture WHERE disc_id = :discid;");
